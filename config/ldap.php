@@ -143,7 +143,7 @@ return [
                 |
                 */
 
-                'hosts' => explode(' ', env('LDAP_HOSTS', '200.129.46.66 adt.ifce.edu.br')),
+                'hosts' => explode(' ', env('LDAP_HOSTS', '')),
 
                 /*
                 |--------------------------------------------------------------------------
@@ -183,7 +183,7 @@ return [
                 |
                 */
 
-                'base_dn' => env('LDAP_BASE_DN', 'ou=Alunos,ou=DG-SOBRAL,ou=IFCE,dc=ad,dc=ifce,dc=edu,dc=br'),
+                'base_dn' => env('LDAP_BASE_DN', ''),
 
                 /*
                 |--------------------------------------------------------------------------
