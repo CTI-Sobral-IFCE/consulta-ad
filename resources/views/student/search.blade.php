@@ -54,7 +54,7 @@
                         <li>Exemplo:
                             <ul class="list-disc ml-6">
                                 <li><strong>Usuário:</strong> 123456789123 <small>Matrícula do aluno</small></li>
-                                <li><strong>Senha:</strong> if.cpf <small>CPF do aluno  (apenas números)</small></li>
+                                <li><strong>Senha:</strong> @IFCE.&#60;DataNascimento&#62; <small>Data de Nascimento do aluno (apenas números)</small></li>
                             </ul>
                         </li>
                     </ol>
@@ -95,24 +95,6 @@
             </ol>
         </section>
         <section class="flex flex-col items-center mt-4 border-t border-t-gray-200 text-center">
-            <h1 class="text-4xl">Dúvidas?</h1>
-            <h3 class="text-2xl">Videos tutoriais</h3>
-            <p>Ainda com dúvida? Veja se esses vídeos abaixo podem lhe ajudar com o seu problema:</p>
-            <h3 class="text-2xl">Acessar e-mail no Celular Android</h3>
-            <figure class="figure-video">
-                <div class="box-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0CXdR6FCbGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <figcaption class="text-sm">Vídeo produzido pelo Campus Tianguá.</figcaption>
-            </figure>
-            <h3>Acessar e-mail no Computador</h3>
-            <figure class="figure-video">
-                <div class="box-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QuLlkiou2FA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <figcaption class="text-sm">Vídeo produzido pelo Campus Tianguá.</figcaption>
-            </figure>
-
             <div class="flex justify-center my-6">
                 <a href="{{ route('student.index') }}" class="flex gap-2 justify-between items-center border border-green-dark bg-green text-white px-2 py-1 rounded-md hover:bg-green-light hover:border-green">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">

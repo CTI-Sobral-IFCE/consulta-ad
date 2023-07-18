@@ -41,37 +41,10 @@
             </div>
         </form>
     </section>
-    <section class="flex flex-col items-center mt-4 border-t border-t-gray-200 text-center">
-        <h1 class="text-4xl">Dúvidas?</h1>
-        <h3 class="text-2xl">Videos tutoriais</h3>
-        <p>Ainda com dúvida? Veja se esses vídeos abaixo podem lhe ajudar com o seu problema:</p>
-        <h3 class="text-2xl">Acessar e-mail no Celular Android</h3>
-        <figure class="figure-video">
-            <div class="box-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0CXdR6FCbGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <figcaption class="text-sm">Vídeo produzido pelo Campus Tianguá.</figcaption>
-        </figure>
-        <h3>Acessar e-mail no Computador</h3>
-        <figure class="figure-video">
-            <div class="box-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QuLlkiou2FA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <figcaption class="text-sm">Vídeo produzido pelo Campus Tianguá.</figcaption>
-        </figure>
-        <div class="hidden my-6 md:block">
-            <a href="https://sistemas.sobral.ifce.edu.br/" class="flex gap-2 justify-between items-center bg-gray-600 text-white px-3 py-2 rounded-md hover:bg-gray-500 hover:border-gray-500 transition">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
-                    <path d="M5.921 11.9 1.353 8.62a.719.719 0 0 1 0-1.238L5.921 4.1A.716.716 0 0 1 7 4.719V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z"/>
-                </svg>
-                Voltar
-            </a>
-        </div>
-    </section>
 @endsection
 
 @push('scripts')
-    <script defer>
+    {{-- <script defer>
         let grecaptchaKeyMeta = document.querySelector("meta[name='grecaptcha-key']");
         let grecaptchaKey = grecaptchaKeyMeta.getAttribute("content");
 
@@ -98,7 +71,7 @@
                 }
             });
         });
-    </script>
+    </script> --}}
     <script defer>
         let cpf = IMask(document.getElementById('cpf'), {
             mask: '000.000.000-00'
